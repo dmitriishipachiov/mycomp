@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="static/nicepage.css" media="screen">
+    <link rel="stylesheet" href="static/index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="static/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="static/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 7.1.0, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded:200,300,400,500,600,700,800,900">
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1",
+		"logo": "static/images/default-logo.png"
+    }</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Магазин">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Магазин.html" data-home-page-title="Магазин" data-path-to-root="./" data-include-products="true" class="u-body u-xl-mode" data-lang="ru"><header class="u-black u-clearfix u-header u-header" id="sec-4bef"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container"></div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Магазин</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Корзина</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Доставка</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <a href="#" class="u-image u-logo u-image-1">
+          <img src="static/images/default-logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-2">
+          <div class="menu-collapse">
+            <a class="u-button-style u-hamburger-link u-nav-link" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#svg-fb95"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-fb95" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Магазин</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Корзина</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Доставка</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Войти</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Магазин</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Корзина</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Доставка</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Войти</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header> 
+    <section class="skrollable u-clearfix u-container-align-center u-image u-parallax u-shading u-section-1" id="sec-defb" data-image-width="425" data-image-height="283">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-align-center u-text u-text-default u-text-1">Сборка компьютера на высоком профессиональном уровне</h1>
+        <p class="u-align-center u-text u-text-2">Мы предлагаем услуги по сборке компьютеров и продаже комплектующих. Наши специалисты готовы помочь подобрать и собрать идеальную конфигурацию для ваших задач.</p>
+        <a href="#" class="u-align-center u-border-none u-btn u-button-style u-white u-btn-1">Контакты<br>
+        </a>
+      </div>
+    </section>
+    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-section-2" id="sec-e2ef">
+      <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-align-center-sm u-container-align-center-xs u-container-align-left-lg u-container-align-left-md u-container-align-left-xl u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <h2 class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-1">Продажа комплектующих</h2>
+                <p class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default-lg u-text-default-md u-text-default-xl u-text-2">Мы предлагаем услуги сборки компьютеров по индивидуальным требованиям с гарантией качества.</p>
+                <p class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default u-text-3">Индивидуальный подход каждому клиенту.</p>
+                <a href="#" class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-black u-border-none u-btn u-button-style u-btn-1">О нас </a>
+              </div>
+            </div>
+            <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="425" data-image-height="425">
+              <div class="u-container-layout u-container-layout-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-section-3" id="sec-3ac7">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-1">Готовые системы</h2>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-grey-5 u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h3 class="u-align-center u-text u-text-default u-text-2">1</h3>
+                <h6 class="u-align-center u-text u-text-default u-text-3">Сборка ПК на заказ по вашим требованиям</h6>
+                <p class="u-align-center u-text u-text-default u-text-4">Современные компьютеры сборка.</p>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-grey-5 u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h3 class="u-align-center u-text u-text-default u-text-5">2</h3>
+                <h6 class="u-align-center u-text u-text-default u-text-6">Продажа комплектующих для сборки компьютера</h6>
+                <p class="u-align-center u-text u-text-default u-text-7">Продажа комплектующих выгодное предложение.</p>
+              </div>
+            </div>
+            <div class="u-container-style u-grey-5 u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h3 class="u-align-center u-text u-text-default u-text-8">3</h3>
+                <h6 class="u-align-center u-text u-text-default u-text-9">Как собрать компьютер самостоятельно дома</h6>
+                <p class="u-align-center u-text u-text-default u-text-10">Качественная сборка персональных ПК.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-section-4" id="sec-fbbb">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" data-image-width="425" data-image-height="319" src="static/images/photo-1537882462276-1f941286db4e.jpeg">
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-2" data-image-width="425" data-image-height="283" src="static/images/photo-1508921340878-ba53e1f016ec.jpeg">
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-3" data-image-width="425" data-image-height="280" src="static/images/photo-1498409785966-ab341407de6e.jpeg">
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-4" data-image-width="425" data-image-height="283" src="static/images/photo-1542315192-1f61a1792f33.jpeg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-valign-middle-lg u-section-5" id="carousel_db8c">
+      <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="425" data-image-height="283">
+              <div class="u-container-layout u-container-layout-1"></div>
+            </div>
+            <div class="u-container-align-center-sm u-container-align-center-xs u-container-style u-grey-5 u-layout-cell u-size-30 u-layout-cell-2" data-image-width="712" data-image-height="897">
+              <div class="u-container-layout u-container-layout-2">
+                <h2 class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-1">Как выбрать подходящие комплектующие для сборки ПК</h2>
+                <p class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default u-text-2">В нашем ассортименте вы найдете широкий выбор комплектующих для апгрейда или новой сборки.</p>
+                <p class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default u-text-3">Продажа комплектующих с гарантией.</p>
+                <a href="#" class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-black u-border-none u-btn u-button-style u-btn-1">Подробнее<br>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-container-align-center u-custom-typography u-section-6" id="sec-cbb4">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <img alt="" class="u-image u-image-default u-image-1" src="static/images/photo-1543128639-4cb7e6eeef1b.jpeg" data-image-width="425" data-image-height="319">
+                <h5 class="u-text u-text-1">Нат Рейнольдс</h5>
+                <p class="u-text u-text-2">Бухгалтер-аудитор</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                <img alt="" class="u-image u-image-default u-image-2" src="static/images/photo-1542345307-d87fd97e0ed5.jpeg" data-image-width="425" data-image-height="283">
+                <h5 class="u-text u-text-3">Фрэнк Кинни</h5>
+                <p class="u-text u-text-4">Финансовый директор</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+                <img alt="" class="u-image u-image-default u-image-3" src="static/images/photo-1506188232657-23c9c893ac2b.jpeg" data-image-width="425" data-image-height="283">
+                <h5 class="u-text u-text-5">Дженни Робертс</h5>
+                <p class="u-text u-text-6">вице-президент</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
+                <img alt="" class="u-image u-image-round u-radius u-image-4" src="static/images/photo-1489110804417-276c3f517515.jpeg" data-image-width="425" data-image-height="283">
+                <h5 class="u-text u-text-7">Фиби Нельсон</h5>
+                <p class="u-text u-text-8">Менеджер по рекламе</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+                <img alt="" class="u-image u-image-default u-image-5" src="static/images/photo-1521383899078-1c7c03c76b59.jpeg" data-image-width="425" data-image-height="311">
+                <h5 class="u-text u-text-9">Селия Альмеда</h5>
+                <p class="u-text u-text-10">Офис-менеджер</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-6">
+                <img alt="" class="u-image u-image-default u-image-6" src="static/images/photo-1542546068979-b6affb46ea8f.jpeg" data-image-width="283" data-image-height="425">
+                <h5 class="u-text u-text-11">Сэмюэл Шик</h5>
+                <p class="u-text u-text-12">Менеджер по продажам</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-grey-5 u-section-7" id="sec-f47d">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <h5 class="u-align-center u-text u-text-default u-text-1">Сборка ПК</h5>
+                <h3 class="u-align-center u-text u-text-default u-text-2">Продажа комплектующих</h3>
+                <h6 class="u-align-center u-text u-text-default u-text-3">Готовые комплектующие для сборки ПК</h6>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                <h5 class="u-align-center u-text u-text-default u-text-4">Готовые системы</h5>
+                <h3 class="u-align-center u-text u-text-default u-text-5">Жесткий диск</h3>
+                <h6 class="u-align-center u-text u-text-default u-text-6">Индивидуальная сборка компьютеров под ключ</h6>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+                <h5 class="u-align-center u-text u-text-default u-text-7">Материнская плата</h5>
+                <h3 class="u-align-center u-text u-text-default u-text-8">Видеокарта</h3>
+                <h6 class="u-align-center u-text u-text-default u-text-9">Купить готовый компьютер или собрать самому?</h6>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
+                <h5 class="u-align-center u-text u-text-default u-text-10">Оперативная память</h5>
+                <h3 class="u-align-center u-text u-text-default u-text-11">Процессоры</h3>
+                <h6 class="u-align-center u-text u-text-default u-text-12">Широкий выбор комплектующих для ПК</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-8" id="sec-1826">
+      <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-none u-gallery-1">
+        <div class="u-gallery-inner u-gallery-inner-1">
+          <div class="u-effect-hover-zoom u-gallery-item">
+            <div class="u-back-slide" data-image-width="283" data-image-height="425">
+              <img class="u-back-image u-expanded" src="static/images/photo-1541807084-5c52b6b3adef.jpeg">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-1"></div>
+          </div>
+          <div class="u-effect-hover-zoom u-gallery-item">
+            <div class="u-back-slide" data-image-width="267" data-image-height="425">
+              <img class="u-back-image u-expanded" src="static/images/photo-1543270317-5040b5726070.jpeg">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-2"></div>
+          </div>
+          <div class="u-effect-hover-zoom u-gallery-item">
+            <div class="u-back-slide" data-image-width="283" data-image-height="425">
+              <img class="u-back-image u-expanded" src="static/images/photo-1543145223-1f9043516739.jpeg">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-3"></div>
+          </div>
+          <div class="u-effect-hover-zoom u-gallery-item">
+            <div class="u-back-slide" data-image-width="287" data-image-height="425">
+              <img class="u-back-image u-expanded" src="static/images/photo-1526657782461-9fe13402a841.jpeg">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-4"></div>
+          </div>
+          <div class="u-effect-hover-zoom u-gallery-item">
+            <div class="u-back-slide" data-image-width="340" data-image-height="425">
+              <img class="u-back-image u-expanded" src="static/images/photo-1543240765-8be3416c30d9.jpeg">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-5"></div>
+          </div>
+          <div class="u-effect-hover-zoom u-gallery-item">
+            <div class="u-back-slide" data-image-width="283" data-image-height="425">
+              <img class="u-back-image u-expanded" src="static/images/photo-1541240290619-3f2fad86473d.jpeg">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-grey-5 u-section-9" id="sec-3a96">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-align-center u-text u-text-1">Профессиональная помощь в сборке компьютера</h2>
+        <div class="u-accordion u-expanded-width u-accordion-1">
+          <div class="u-accordion-item">
+            <a class="active u-accordion-link u-button-style u-custom-font u-text-active-palette-1-base u-text-black u-accordion-link-1" id="link-d3fc" aria-controls="d3fc" aria-selected="true">
+              <span class="u-accordion-link-text"> Digital Marketing Strategy</span>
+              <span class="u-accordion-link-icon u-icon u-text-black u-icon-1">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xlink:href="#svg-6dd4"></use></svg>
+                <svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-6dd4"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg>
+              </span>
+            </a>
+            <div class="u-accordion-active u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-1" id="d3fc" aria-labelledby="link-d3fc">
+              <div class="u-container-layout u-valign-top u-container-layout-1">
+                <p class="u-text u-text-default u-text-2">Компания предлагает широкий ассортимент комплектующих высокого качества по доступным ценам. У нас вы найдете все необходимое для сборки мощного и надежного компьютера.</p>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-button-style u-custom-font u-text-active-palette-1-base u-text-black u-accordion-link-2" id="link-a592" aria-controls="a592" aria-selected="false">
+              <span class="u-accordion-link-text"> Social Media Management</span>
+              <span class="u-accordion-link-icon u-icon u-text-black u-icon-2">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xlink:href="#svg-f917"></use></svg>
+                <svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-f917"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg>
+              </span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-2" id="a592" aria-labelledby="link-a592">
+              <div class="u-container-layout u-container-layout-2">
+                <p class="u-text u-text-default u-text-3">Заказывая сборку компьютера у нас, вы можете быть уверены в профессиональном подходе, качественных комплектующих и индивидуальном подходе к каждому клиенту.</p>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-button-style u-custom-font u-text-active-palette-1-base u-text-black u-accordion-link-3" id="link-a4dd" aria-controls="a4dd" aria-selected="false">
+              <span class="u-accordion-link-text"> Content Creation Services</span>
+              <span class="u-accordion-link-icon u-icon u-text-black u-icon-3">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xlink:href="#svg-a6eb"></use></svg>
+                <svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-a6eb"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg>
+              </span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3" id="a4dd" aria-labelledby="link-a4dd">
+              <div class="u-container-layout u-container-layout-3">
+                <p class="u-text u-text-default u-text-4">Мы предлагаем услуги по сборке компьютеров и продаже комплектующих. Наши специалисты готовы помочь подобрать и собрать идеальную конфигурацию для ваших задач.</p>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-button-style u-custom-font u-text-active-palette-1-base u-text-black u-accordion-link-4" id="link-6aca" aria-controls="6aca" aria-selected="false">
+              <span class="u-accordion-link-text"> Web Design and Development</span>
+              <span class="u-accordion-link-icon u-icon u-text-black u-icon-4">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xlink:href="#svg-e381"></use></svg>
+                <svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-e381"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg>
+              </span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-4" id="6aca" aria-labelledby="link-6aca">
+              <div class="u-container-layout u-container-layout-4">
+                <p class="u-text u-text-default u-text-5">Компания предлагает широкий ассортимент комплектующих высокого качества по доступным ценам. У нас вы найдете все необходимое для сборки мощного и надежного компьютера.</p>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-button-style u-custom-font u-text-active-palette-1-base u-text-black u-accordion-link-5" id="link-1afd" aria-controls="1afd" aria-selected="false">
+              <span class="u-accordion-link-text"> Search Engine Optimization</span>
+              <span class="u-accordion-link-icon u-icon u-text-black u-icon-5">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xlink:href="#svg-f740"></use></svg>
+                <svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-f740"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg>
+              </span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-5" id="1afd" aria-labelledby="link-1afd">
+              <div class="u-container-layout u-container-layout-5">
+                <p class="u-text u-text-default u-text-6">Заказывая сборку компьютера у нас, вы можете быть уверены в профессиональном подходе, качественных комплектующих и индивидуальном подходе к каждому клиенту.</p>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-button-style u-custom-font u-text-active-palette-1-base u-text-black u-accordion-link-6" id="link-ee24" aria-controls="ee24" aria-selected="false">
+              <span class="u-accordion-link-text"> Paid Advertising Campaigns</span>
+              <span class="u-accordion-link-icon u-icon u-text-black u-icon-6">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 16 16" style=""><use xlink:href="#svg-1de6"></use></svg>
+                <svg class="u-svg-content" viewBox="0 0 16 16" x="0px" y="0px" id="svg-1de6"><path d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
+	c0.4-0.4,0.4-0.9,0-1.3c-0.4-0.4-1-0.4-1.3,0L8,10.7z"></path></svg>
+              </span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-6" id="ee24" aria-labelledby="link-ee24">
+              <div class="u-container-layout u-container-layout-6">
+                <p class="u-text u-text-default u-text-7">Мы предлагаем услуги по сборке компьютеров и продаже комплектующих. Наши специалисты готовы помочь подобрать и собрать идеальную конфигурацию для ваших задач.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-image u-shading u-section-10" src="" data-image-width="340" data-image-height="425" id="sec-ba99">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div alt="" class="u-image u-image-circle u-image-1" src="" data-image-width="626" data-image-height="417"></div>
+        <p class="u-align-center u-text u-text-1">"Aenean pulvinar dui ornare, feugiat lorem non, ultrices justo. Mauris efficitur, mauris in auctor euismod, quam elit ultrices urna, eget eleifend arcu risus id metus. Maecenas ex enim, mattis eu velit vitae, blandit mattis sapien. Sed aliquam leo et semper vestibulum."</p>
+        <h4 class="u-align-center u-text u-text-2">Рокси Свонсон</h4>
+        <h6 class="u-align-center u-text u-text-3">вице-президент</h6>
+      </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-section-11" id="sec-ffbd">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-grey-5 u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
+                <h3 class="u-align-center u-text u-text-1" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">250+</h3>
+                <h5 class="u-align-center u-text u-text-2">Блок питания</h5>
+                <p class="u-align-center u-text u-text-3">Продажа комплектующих различных производителей.</p>
+              </div>
+            </div>
+            <div class="u-container-align-center u-container-style u-grey-5 u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
+                <h3 class="u-align-center u-text u-text-4" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">130 тыс.</h3>
+                <h5 class="u-align-center u-text u-text-5">Корпусы</h5>
+                <p class="u-align-center u-text u-text-6">Опытные специалисты сборка профессионально.</p>
+              </div>
+            </div>
+            <div class="u-container-style u-grey-5 u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
+                <h3 class="u-align-center u-text u-text-7" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">12</h3>
+                <h5 class="u-align-center u-text u-text-8">Сборка ПК</h5>
+                <p class="u-align-center u-text u-text-9">Продажа комплектующих по доступным ценам.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skrollable u-clearfix u-container-align-center u-image u-parallax u-section-12" src="" data-image-width="425" data-image-height="283" id="sec-ec39">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-align-center u-container-align-center u-container-style u-group u-opacity u-opacity-70 u-white u-group-1">
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <h2 class="u-align-center u-text u-text-1">Свяжитесь с нами<br>
+            </h2>
+            <div class="u-form u-form-1">
+              <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form-1" style="padding: 10px;">
+                <div class="u-form-group u-form-name">
+                  <label for="name-74d5" class="u-label">Name</label>
+                  <input type="text" placeholder="Enter your Name" id="name-74d5" name="name" class="u-border-none u-input u-input-rectangle" required="">
+                </div>
+                <div class="u-form-email u-form-group">
+                  <label for="email-74d5" class="u-label">Email</label>
+                  <input type="email" placeholder="Enter a valid email address" id="email-74d5" name="email" class="u-border-none u-input u-input-rectangle" required="">
+                </div>
+                <div class="u-form-group u-form-message">
+                  <label for="message-74d5" class="u-label">Message</label>
+                  <textarea placeholder="Enter your message" rows="4" cols="50" id="message-74d5" name="message" class="u-border-none u-input u-input-rectangle" required=""></textarea>
+                </div>
+                <div class="u-align-left u-form-group u-form-submit">
+                  <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">Представлять на рассмотрение</a>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                <input type="hidden" value="" name="recaptchaResponse">
+                <input type="hidden" name="formServices" value="03812af8-60ba-944b-851f-e3e013d1bf36">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-black u-clearfix u-container-align-center u-footer u-footer" id="sec-45e4"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="mailto:info@site.com" class="u-active-none u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">
+          <span class="u-icon u-icon-1">
+            <svg class="u-svg-content" viewBox="0 0 24 16" x="0px" y="0px" style="width: 1em; height: 1em;"><path fill="currentColor" d="M23.8,1.1l-7.3,6.8l7.3,6.8c0.1-0.2,0.2-0.6,0.2-0.9V2C24,1.7,23.9,1.4,23.8,1.1z M21.8,0H2.2
+	c-0.4,0-0.7,0.1-1,0.2L10.6,9c0.8,0.8,2.2,0.8,3,0l9.2-8.7C22.6,0.1,22.2,0,21.8,0z M0.2,1.1C0.1,1.4,0,1.7,0,2V14
+	c0,0.3,0.1,0.6,0.2,0.9l7.3-6.8L0.2,1.1z M15.5,9l-1.1,1c-1.3,1.2-3.6,1.2-4.9,0l-1-1l-7.3,6.8c0.2,0.1,0.6,0.2,1,0.2H22
+	c0.4,0,0.6-0.1,1-0.2L15.5,9z"></path></svg>
+          </span>&nbsp;info@site.com
+        </a>
+      </div></footer>
+  
+</body></html>
