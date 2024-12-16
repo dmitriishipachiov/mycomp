@@ -1,87 +1,9 @@
-<!DOCTYPE html>
+{% extends "main/base.html" %}
 {% load static %}
-<html style="font-size: 16px;" lang="ru"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <title>Магазин</title>
-    <link rel="stylesheet" href="static/nicepage.css" media="screen">
-    <link rel="stylesheet" href="static/index.css" media="screen">
-    <script class="u-script" type="text/javascript" src="static/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="static/nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 7.1.0, nicepage.com">
-    <meta name="referrer" content="origin">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded:200,300,400,500,600,700,800,900">
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site1",
-		"logo": "static/images/default-logo.png"
-    }</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Магазин">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-home-page="Магазин.html" data-home-page-title="Магазин" data-path-to-root="./" data-include-products="true" class="u-body u-xl-mode" data-lang="ru"><header class="u-black u-clearfix u-header u-header" id="sec-4bef"><div class="u-clearfix u-sheet u-sheet-1">
-        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container"></div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Магазин</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Корзина</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Доставка</a>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <a href="#" class="u-image u-logo u-image-1">
-          <img src="static/images/default-logo.png" class="u-logo-image u-logo-image-1">
-        </a>
-        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-2">
-          <div class="menu-collapse">
-            <a class="u-button-style u-hamburger-link u-nav-link" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#svg-fb95"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="svg-fb95" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Магазин</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Корзина</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Доставка</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Войти</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Магазин</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Корзина</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Доставка</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Войти</a>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div></header> 
+
+{% block body %}
+
+<link rel="stylesheet" href="{% static "index.css" %}" media="screen">
     <section class="skrollable u-clearfix u-container-align-center u-image u-parallax u-shading u-section-1" id="sec-defb" data-image-width="425" data-image-height="283">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h1 class="u-align-center u-text u-text-default u-text-1">Сборка компьютера на высоком профессиональном уровне</h1>
@@ -145,22 +67,22 @@
           <div class="u-repeater u-repeater-1">
             <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
-                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" data-image-width="425" data-image-height="319" src="static/images/photo-1537882462276-1f941286db4e.jpeg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" data-image-width="425" data-image-height="319" src="{% static "images/photo-1537882462276-1f941286db4e.jpeg" %}">
               </div>
             </div>
             <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
-                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-2" data-image-width="425" data-image-height="283" src="static/images/photo-1508921340878-ba53e1f016ec.jpeg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-2" data-image-width="425" data-image-height="283" src="{% static "images/photo-1508921340878-ba53e1f016ec.jpeg" %}">
               </div>
             </div>
             <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
-                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-3" data-image-width="425" data-image-height="280" src="static/images/photo-1498409785966-ab341407de6e.jpeg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-3" data-image-width="425" data-image-height="280" src="{% static "images/photo-1498409785966-ab341407de6e.jpeg" %}">
               </div>
             </div>
             <div class="u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
-                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-4" data-image-width="425" data-image-height="283" src="static/images/photo-1542315192-1f61a1792f33.jpeg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-4" data-image-width="425" data-image-height="283" src="{% static "images/photo-1542315192-1f61a1792f33.jpeg" %}">
               </div>
             </div>
           </div>
@@ -179,7 +101,7 @@
                 <h2 class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-1">Как выбрать подходящие комплектующие для сборки ПК</h2>
                 <p class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default u-text-2">В нашем ассортименте вы найдете широкий выбор комплектующих для апгрейда или новой сборки.</p>
                 <p class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-text u-text-default u-text-3">Продажа комплектующих с гарантией.</p>
-                <a href="#" class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-black u-border-none u-btn u-button-style u-btn-1">Подробнее<br>
+                <a href="{% url "main:blog" %}" class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-black u-border-none u-btn u-button-style u-btn-1">Подробнее<br>
                 </a>
               </div>
             </div>
@@ -193,42 +115,42 @@
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                <img alt="" class="u-image u-image-default u-image-1" src="static/images/photo-1543128639-4cb7e6eeef1b.jpeg" data-image-width="425" data-image-height="319">
+                <img alt="" class="u-image u-image-default u-image-1" src="{% static "images/photo-1543128639-4cb7e6eeef1b.jpeg" %}" data-image-width="425" data-image-height="319">
                 <h5 class="u-text u-text-1">Нат Рейнольдс</h5>
                 <p class="u-text u-text-2">Бухгалтер-аудитор</p>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-                <img alt="" class="u-image u-image-default u-image-2" src="static/images/photo-1542345307-d87fd97e0ed5.jpeg" data-image-width="425" data-image-height="283">
+                <img alt="" class="u-image u-image-default u-image-2" src="{% static "images/photo-1542345307-d87fd97e0ed5.jpeg" %}" data-image-width="425" data-image-height="283">
                 <h5 class="u-text u-text-3">Фрэнк Кинни</h5>
                 <p class="u-text u-text-4">Финансовый директор</p>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                <img alt="" class="u-image u-image-default u-image-3" src="static/images/photo-1506188232657-23c9c893ac2b.jpeg" data-image-width="425" data-image-height="283">
+                <img alt="" class="u-image u-image-default u-image-3" src="{% static "images/photo-1506188232657-23c9c893ac2b.jpeg" %}" data-image-width="425" data-image-height="283">
                 <h5 class="u-text u-text-5">Дженни Робертс</h5>
                 <p class="u-text u-text-6">вице-президент</p>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
-                <img alt="" class="u-image u-image-round u-radius u-image-4" src="static/images/photo-1489110804417-276c3f517515.jpeg" data-image-width="425" data-image-height="283">
+                <img alt="" class="u-image u-image-round u-radius u-image-4" src="{% static "images/photo-1489110804417-276c3f517515.jpeg" %}" data-image-width="425" data-image-height="283">
                 <h5 class="u-text u-text-7">Фиби Нельсон</h5>
                 <p class="u-text u-text-8">Менеджер по рекламе</p>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
-                <img alt="" class="u-image u-image-default u-image-5" src="static/images/photo-1521383899078-1c7c03c76b59.jpeg" data-image-width="425" data-image-height="311">
+                <img alt="" class="u-image u-image-default u-image-5" src="{% static "images/photo-1521383899078-1c7c03c76b59.jpeg" %}" data-image-width="425" data-image-height="311">
                 <h5 class="u-text u-text-9">Селия Альмеда</h5>
                 <p class="u-text u-text-10">Офис-менеджер</p>
               </div>
             </div>
             <div class="u-align-center u-container-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-top u-container-layout-6">
-                <img alt="" class="u-image u-image-default u-image-6" src="static/images/photo-1542546068979-b6affb46ea8f.jpeg" data-image-width="283" data-image-height="425">
+                <img alt="" class="u-image u-image-default u-image-6" src="{% static "images/photo-1542546068979-b6affb46ea8f.jpeg" %}" data-image-width="283" data-image-height="425">
                 <h5 class="u-text u-text-11">Сэмюэл Шик</h5>
                 <p class="u-text u-text-12">Менеджер по продажам</p>
               </div>
@@ -278,37 +200,37 @@
         <div class="u-gallery-inner u-gallery-inner-1">
           <div class="u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide" data-image-width="283" data-image-height="425">
-              <img class="u-back-image u-expanded" src="static/images/photo-1541807084-5c52b6b3adef.jpeg">
+              <img class="u-back-image u-expanded" src="{% static "images/photo-1541807084-5c52b6b3adef.jpeg" %}">
             </div>
             <div class="u-over-slide u-shading u-over-slide-1"></div>
           </div>
           <div class="u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide" data-image-width="267" data-image-height="425">
-              <img class="u-back-image u-expanded" src="static/images/photo-1543270317-5040b5726070.jpeg">
+              <img class="u-back-image u-expanded" src="{% static "images/photo-1543270317-5040b5726070.jpeg" %}">
             </div>
             <div class="u-over-slide u-shading u-over-slide-2"></div>
           </div>
           <div class="u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide" data-image-width="283" data-image-height="425">
-              <img class="u-back-image u-expanded" src="static/images/photo-1543145223-1f9043516739.jpeg">
+              <img class="u-back-image u-expanded" src="{% static "images/photo-1543145223-1f9043516739.jpeg" %}">
             </div>
             <div class="u-over-slide u-shading u-over-slide-3"></div>
           </div>
           <div class="u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide" data-image-width="287" data-image-height="425">
-              <img class="u-back-image u-expanded" src="static/images/photo-1526657782461-9fe13402a841.jpeg">
+              <img class="u-back-image u-expanded" src="{% static "images/photo-1526657782461-9fe13402a841.jpeg" %}">
             </div>
             <div class="u-over-slide u-shading u-over-slide-4"></div>
           </div>
           <div class="u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide" data-image-width="340" data-image-height="425">
-              <img class="u-back-image u-expanded" src="static/images/photo-1543240765-8be3416c30d9.jpeg">
+              <img class="u-back-image u-expanded" src="{% static "images/photo-1543240765-8be3416c30d9.jpeg" %}">
             </div>
             <div class="u-over-slide u-shading u-over-slide-5"></div>
           </div>
           <div class="u-effect-hover-zoom u-gallery-item">
             <div class="u-back-slide" data-image-width="283" data-image-height="425">
-              <img class="u-back-image u-expanded" src="static/images/photo-1541240290619-3f2fad86473d.jpeg">
+              <img class="u-back-image u-expanded" src="{% static "images/photo-1541240290619-3f2fad86473d.jpeg" %}">
             </div>
             <div class="u-over-slide u-shading u-over-slide-6"></div>
           </div>
@@ -483,18 +405,6 @@
         </div>
       </div>
     </section>
-    
-    
-    
-    <footer class="u-align-center u-black u-clearfix u-container-align-center u-footer u-footer" id="sec-45e4"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="mailto:info@site.com" class="u-active-none u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">
-          <span class="u-icon u-icon-1">
-            <svg class="u-svg-content" viewBox="0 0 24 16" x="0px" y="0px" style="width: 1em; height: 1em;"><path fill="currentColor" d="M23.8,1.1l-7.3,6.8l7.3,6.8c0.1-0.2,0.2-0.6,0.2-0.9V2C24,1.7,23.9,1.4,23.8,1.1z M21.8,0H2.2
-	c-0.4,0-0.7,0.1-1,0.2L10.6,9c0.8,0.8,2.2,0.8,3,0l9.2-8.7C22.6,0.1,22.2,0,21.8,0z M0.2,1.1C0.1,1.4,0,1.7,0,2V14
-	c0,0.3,0.1,0.6,0.2,0.9l7.3-6.8L0.2,1.1z M15.5,9l-1.1,1c-1.3,1.2-3.6,1.2-4.9,0l-1-1l-7.3,6.8c0.2,0.1,0.6,0.2,1,0.2H22
-	c0.4,0,0.6-0.1,1-0.2L15.5,9z"></path></svg>
-          </span>&nbsp;info@site.com
-        </a>
-      </div></footer>
-  
-</body></html>
+  </body>
+
+{% endblock body %}
