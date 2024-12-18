@@ -1,10 +1,25 @@
+from multiprocessing import context
+from turtle import title
 from django.shortcuts import render
 
 from .models import *
 
 def index(request):
-    return render(request, 'main/index.html')
+    context = {
+        'title': 'Магазин'
+    }
+    return render(request, 'main/index.html', context=context)
 
 
 def blog(request):
-    return render(request, 'blog/blog.html')
+    context = {
+        'title': 'Блог'
+    }
+    return render(request, 'main/blog/blog.html', context=context)
+
+
+def post(request):
+    context = {
+        'title': 'Пост'
+    }
+    return render(request, 'main/blog/post.html', context=context)

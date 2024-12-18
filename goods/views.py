@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 from .models import *
 
-def index(request):
-    return render(request, 'goods/index.html')
+def products(request):
+    return render(request, 'goods/products.html')
