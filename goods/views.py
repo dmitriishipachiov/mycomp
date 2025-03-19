@@ -3,4 +3,10 @@ from django.shortcuts import render
 from .models import *
 
 def products(request):
-    return render(request, 'goods/products.html')
+    context = {
+        'title': 'Товары'
+    }
+    return render(request, 'goods/products/products.html', context=context)
+
+def womens(request):
+    return render(request, 'goods/products/womens.html')

@@ -1,5 +1,3 @@
-from multiprocessing import context
-from turtle import title
 from django.shortcuts import render
 
 from .models import *

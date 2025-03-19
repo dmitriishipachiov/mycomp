@@ -1,0 +1,35 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block body %}
+
+<section class="u-clearfix u-grey-10 current-section u-block-a251-1" custom-posts-hash="[]" data-style="blank" data-section-properties="{&quot;margin&quot;:&quot;none&quot;,&quot;stretch&quot;:true}" id="sec-8734" data-source="functional_fix" data-id="a251" style="background-image: none; min-height: 671px">
+  <div class="u-expanded-width u-gradient u-shape u-shape-rectangle u-block-control u-block-a251-19" style="height: 457px; margin-top: 0; margin-bottom: 0; background-image: linear-gradient(var(--palette-1-light-1), var(--palette-1-base))" data-block="53" data-block-type="Shape"></div><div class="u-align-center u-border-20 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-container-style u-custom-border u-group u-radius-46 u-shape-round u-white u-block-control u-block-a251-3" style="width: 800px; min-height: 535px; box-shadow: 0px -2px 26px 0 rgba(var(--black-r),var(--black-g),var(--black-b),0.25); margin-top: -388px; margin-left: auto; margin-right: auto; margin-bottom: 60px" data-block="54" data-block-type="Group">
+    <div class="u-container-layout u-valign-middle-xs u-block-a251-4" style="padding-top: 50px; padding-bottom: 50px; padding-left: 30px; padding-right: 30px" data-container-layout-dom="6"><h2 class="u-text u-text-default u-text-palette-1-base u-block-control u-block-a251-5" style="text-transform: uppercase; font-size: 2.5rem; font-weight: 700; letter-spacing: 2px; margin-top: 0; margin-bottom: 0; margin-left: auto; margin-right: auto" data-block="55" data-block-type="Text">Личный кабинет</h2><div class="u-form u-login-control u-block-control u-block-a251-6" style="height: 293px; width: 570px; margin-top: 26px; margin-left: auto; margin-right: auto; margin-bottom: 0" data-block="56" data-block-type="Form">
+      <form action="{% url "users:login" %}" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 0px;" data-services="">
+        {% csrf_token %}
+        {% comment %} {{ form }} {% endcomment %}
+        <div class="u-form-group u-form-name u-block-control ui-draggable ui-draggable-handle u-block-a251-7" style="" data-block="57" data-block-type="FormField">
+          <label for="username-a30d" class="u-label u-text-grey-25 u-block-a251-8" style="text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0px">Введите ваше имя *</label>
+          <input type="text" placeholder="Enter your Username" id="username-a30d" name="username" class="u-input u-input-rectangle u-grey-10 u-border-grey-10 u-border-2 u-block-a251-9" required="" style="background-image: none">
+        </div>
+        <div class="u-form-group u-form-password u-block-control ui-draggable ui-draggable-handle u-block-a251-10" style="" data-block="58" data-block-type="FormField">
+          <label for="password-a30d" class="u-label u-text-grey-25 u-block-a251-11" style="text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0px">Введите пароль *</label>
+          <input type="text" placeholder="Enter your Password" id="password-a30d" name="password" class="u-input u-input-rectangle u-grey-10 u-border-grey-10 u-border-2 u-block-a251-12" required="" style="background-image: none">
+        </div>
+        <div class="u-form-checkbox u-form-group u-block-control ui-draggable ui-draggable-handle u-block-a251-13" style="" data-block="59" data-block-type="FormField">
+          <input type="checkbox" id="checkbox-a30d" name="remember" value="On" class="u-field-input">
+          <label for="checkbox-a30d" class="u-block-a251-14 u-field-label u-text-grey-25" style="text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0px">Remember me</label>
+        </div>
+        <div class="u-align-left u-form-group u-form-submit u-block-control u-block-a251-15" style="" data-block="60">
+          <a href="#" class="u-btn u-btn-submit u-button-style u-block-control ui-draggable ui-draggable-handle u-block-a251-16" style="width: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 0; padding-right: 0" data-block="61" data-block-type="FormChild,FormButton">Авторизоваться</a>
+          <input type="submit" value="submit" class="u-form-control-hidden">
+        </div>
+        <input type="hidden" value="" name="recaptchaResponse">
+        
+        
+      </form>
+    </div><a href="#" class="u-btn u-button-style u-login-control u-login-forgot-password u-none u-border-hover-palette-1-base u-border-active-palette-2-base u-border-1 u-text-palette-1-base u-border-no-top u-border-no-right u-border-no-left u-block-control u-block-a251-20" style="border-style: solid; margin: 20px 85px 0px auto; padding: 0px;" data-block="73" data-block-type="Button">Забыли пароль?</a><a href="" class="u-btn u-button-style u-login-control u-login-create-account u-none u-border-hover-palette-1-base u-border-active-palette-2-base u-border-1 u-text-palette-1-base u-border-no-top u-border-no-right u-border-no-left u-block-control u-block-a251-21" data-block="72" style="border-style: solid; margin: -23.3907px auto 0px 85px; padding: 0px;" data-block-type="Button">Зарегистрироваться</a></div>
+</div>
+
+{% endblock body %}
